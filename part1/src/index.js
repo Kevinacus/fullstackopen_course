@@ -20,11 +20,17 @@ const Footer = () => {
 }
 
 const App = () => {
-  return [
-    <h1>Greetings</h1>,
-    <Hello name="Maya" age={26 + 10} />,
-    <Footer />
-  ]
+  const name = 'Peter'
+  const age = 10
+
+  return (
+    <>
+      <h1>Greetings</h1>
+      <Hello name="Maya" age={26 + 10} />
+      <Hello name={name} age={age} />
+      <Footer />
+    </>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
