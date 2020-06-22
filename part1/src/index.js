@@ -20,11 +20,11 @@ const Footer = () => {
 }
 
 const App = () => {
-  return (
-    <h1>Greetings</h1>
-    <Hello name="Maya" age={26 + 10} />
+  return [
+    <h1>Greetings</h1>,
+    <Hello name="Maya" age={26 + 10} />,
     <Footer />
-  )
+  ]
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
